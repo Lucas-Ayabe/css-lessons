@@ -65,27 +65,27 @@ export default {
           id: 1,
           title: 'Introdução',
           desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        },
-        {
-          id: 2,
-          title: 'Introdução',
-          desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        },
-        {
-          id: 3,
-          title: 'Introdução',
-          desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        },
-        {
-          id: 4,
-          title: 'Introdução',
-          desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        },
-        {
-          id: 5,
-          title: 'Introdução',
-          desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
         }
+        // {
+        //   id: 2,
+        //   title: 'Introdução',
+        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
+        // },
+        // {
+        //   id: 3,
+        //   title: 'Introdução',
+        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
+        // },
+        // {
+        //   id: 4,
+        //   title: 'Introdução',
+        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
+        // },
+        // {
+        //   id: 5,
+        //   title: 'Introdução',
+        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
+        // }
       ]
     }
   }
