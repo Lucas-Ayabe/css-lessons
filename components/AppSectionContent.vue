@@ -17,7 +17,12 @@ export default {
   flex: 1;
 
   & + & {
-    padding-left: $space-2;
+    margin-top: $space-2;
+
+    @include min-width(map-get($breakpoints, 'md')) {
+      margin-top: 0;
+      margin-left: $space-2;
+    }
   }
 }
 </style>

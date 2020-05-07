@@ -2,9 +2,9 @@
   <a v-if="href !== ''" :href="href" class="nav__link" @click.native="emitClick"
     ><slot></slot
   ></a>
-  <router-link v-else :to="to" class="nav__link" @click.native="emitClick"
+  <nuxt-link v-else :to="to" class="nav__link" @click.native="emitClick"
     ><slot></slot
-  ></router-link>
+  ></nuxt-link>
 </template>
 
 <script>

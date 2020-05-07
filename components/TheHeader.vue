@@ -1,7 +1,7 @@
 <template>
   <header :class="{ header: true, 'is-fixed': fixed }">
     <div class="header__container container">
-      <router-link to="/" class="header__logo">CSS Lessons</router-link>
+      <nuxt-link to="/" class="header__logo">CSS Lessons</nuxt-link>
 
       <button
         :class="{

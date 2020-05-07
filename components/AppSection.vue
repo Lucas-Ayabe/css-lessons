@@ -76,6 +76,21 @@ export default {
     min-height: 60vh;
   }
 
+  &__image {
+    max-width: 35vmax;
+
+    &.-vertical {
+      max-width: initial;
+      max-height: 45vmin;
+      margin: auto;
+
+      @include min-width(map-get($breakpoints, 'md')) {
+        margin: 0;
+        margin-right: auto;
+      }
+    }
+  }
+
   &__title {
     font-size: $font-4;
     font-weight: 400;

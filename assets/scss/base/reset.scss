@@ -2,6 +2,18 @@
   font-size: $font-base;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-light;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

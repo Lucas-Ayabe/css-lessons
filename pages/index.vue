@@ -21,7 +21,7 @@
 
         <AppSectionContent>
           <img
-            style="max-width: 35vmax"
+            class="section__image"
             src="~/static/images/welcome.svg"
             alt="Imagem de Bem vindo(a)"
           />
@@ -35,6 +35,7 @@
 import AppSection from '~/components/AppSection'
 import AppSectionContent from '~/components/AppSectionContent'
 import AppButton from '~/components/AppButton'
+
 export default {
   name: 'Index',
   components: {

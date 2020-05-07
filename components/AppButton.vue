@@ -5,12 +5,12 @@
     :class="['button', colorVariant, isRounded, isFullRounded, isRaised]"
     ><slot></slot
   ></a>
-  <router-link
+  <nuxt-link
     v-else-if="to !== ''"
     :to="to"
     :class="['button', colorVariant, isRounded, isFullRounded, isRaised]"
     ><slot></slot
-  ></router-link>
+  ></nuxt-link>
   <button
     v-else
     :class="['button', colorVariant, isRounded, isFullRounded, isRaised]"
@@ -101,11 +101,11 @@ export default {
       }
 
       &:hover {
-        background: mix($white, $color, 20%);
+        background: mix($white, $color, 10%);
       }
 
       &:active {
-        background: mix($white, $color, 25%);
+        background: mix($white, $color, 20%);
       }
     }
   }
