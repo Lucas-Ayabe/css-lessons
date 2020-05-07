@@ -1,0 +1,21 @@
+%button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: $space-1 $space-2;
+  font-family: $family;
+  font-size: $font-1;
+  transition: all 0.3s ease-in-out;
+}
+
+%button--rounded {
+  @extend %button;
+  border-radius: 4px;
+}
+
+%button--full-rounded {
+  @extend %button;
+  border-radius: 100px;
+}

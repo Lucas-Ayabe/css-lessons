@@ -1,0 +1,15 @@
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+  width: 100%;
+
+  @each $breakpoint, $size in $container-sizes {
+    @include min-width(map-get($breakpoints, $breakpoint)) {
+      max-width: $size;
+    }
+  }
+}
