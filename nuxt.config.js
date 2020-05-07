@@ -16,10 +16,14 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+  },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#a0c' },
   /*
    ** Global CSS
    */

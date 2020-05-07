@@ -3,3 +3,25 @@
     @content;
   }
 }
+
+@function getContrastYIQ($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  $yiq: (($red * 299) + ($green * 587) + ($blue * 114)) / 1000;
+
+  @if ($yiq >= 128) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}
+
+@function getRgba($color, $alpha) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return rgba($red, $green, $blue, $alpha);
+}

@@ -2,19 +2,24 @@
   <nav :class="['header__nav', 'nav', aligment]">
     <ul class="nav__menu">
       <li class="nav__item">
-        <router-link to="/" class="nav__link">Home</router-link>
+        <TheNavLink @click="handleClick">Home</TheNavLink>
       </li>
 
       <li class="nav__item">
-        <router-link to="/" class="nav__link">Aulas</router-link>
+        <TheNavLink to="/lessons" @click="handleClick">Aulas</TheNavLink>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
+import TheNavLink from '~/components/TheNavLink'
+
 export default {
   name: 'TheNav',
+  components: {
+    TheNavLink
+  },
   props: {
     align: {
       type: String,
@@ -24,6 +29,11 @@ export default {
   computed: {
     aligment() {
       return `-${this.align}`
+    }
+  },
+  methods: {
+    handleClick(payload) {
+      this.$emit('changed', payload)
     }
   }
 }
@@ -46,31 +56,10 @@ export default {
   z-index: -999;
 
   &.is-active {
-    background: $primary;
+    background: $primary-light;
     opacity: 1;
     pointer-events: all;
     z-index: 999;
-  }
-
-  @include min-width(map-get($breakpoints, 'md')) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 5 1 auto;
-    position: static;
-    opacity: 1;
-    pointer-events: all;
-    z-index: 999;
-
-    &.-left {
-      justify-content: flex-start;
-      margin-left: $space-2;
-    }
-
-    &.-right {
-      justify-content: flex-end;
-    }
   }
 
   &__menu {
@@ -95,17 +84,28 @@ export default {
     }
   }
 
-  &__link {
-    @extend %button--rounded;
-    font-size: $font-1;
-    color: $white;
+  @include min-width(map-get($breakpoints, 'md')) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 5 1 auto;
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 999;
 
-    &:hover {
-      background: rgba(255, 255, 255, 0.1);
+    &.-left {
+      justify-content: flex-start;
+      margin-left: $space-2;
     }
 
-    &:active {
-      background: rgba(255, 255, 255, 0.2);
+    &.-right {
+      justify-content: flex-end;
+    }
+
+    &__menu {
+      background: transparent;
     }
   }
 }

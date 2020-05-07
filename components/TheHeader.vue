@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header :class="{ header: true, 'is-fixed': fixed }">
     <div class="header__container container">
       <router-link to="/" class="header__logo">CSS Lessons</router-link>
 
@@ -15,7 +15,11 @@
         <span class="nav-toggler__item"></span>
         <span class="nav-toggler__item"></span>
       </button>
-      <TheNav align="right" :class="{ 'is-active': isNavOpen }" />
+      <TheNav
+        align="right"
+        :class="{ 'is-active': isNavOpen }"
+        @changed="toggleNav"
+      />
     </div>
   </header>
 </template>
@@ -26,6 +30,12 @@ export default {
   name: 'TheHeader',
   components: {
     TheNav
+  },
+  props: {
+    fixed: {
+      type: Boolean,
+      default: false
+    }
   },
   data() {
     return {
@@ -40,7 +50,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   &,
   &__container {
@@ -49,6 +59,19 @@ export default {
     align-items: center;
     background: $primary-light;
     height: 80px;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+
+    & + * {
+      margin-top: 80px;
+    }
   }
 
   &__container {
@@ -60,7 +83,7 @@ export default {
     line-height: 1;
     font-size: $font-4;
     color: $white;
-    flex: 1;
+    flex: 0;
     white-space: nowrap;
   }
 }
@@ -70,6 +93,7 @@ export default {
   background: none;
   border: none;
   padding: 0;
+  margin-left: auto;
 
   &.-burger {
     width: 30px;
