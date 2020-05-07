@@ -32,10 +32,10 @@ export default {
     display: block;
     padding: 20px;
     border: 1px solid #ddd;
+    box-shadow: inset 0 0 4px rgba(50, 50, 50, 0.2);
     border-radius: 6px;
     overflow-y: auto;
     max-height: 50vh;
-    height: 10000px;
   }
 
   .card-list__item {
