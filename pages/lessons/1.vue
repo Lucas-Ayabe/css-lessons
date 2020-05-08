@@ -37,8 +37,8 @@
             Esse texto, na verdade é uma div com a class box, então a primeira
             coisa que você deve fazer é trocar a palavra seletor por .box,
             depois a palavra propriedade por color e por último a palavra valor
-            por red. Se o texto ficou vermelho parabéns você estilizou seu
-            primeiro elemento com CSS.
+            por blue. Se o texto ficou azul parabéns você estilizou seu primeiro
+            elemento com CSS.
           </p>
 
           <client-only>
