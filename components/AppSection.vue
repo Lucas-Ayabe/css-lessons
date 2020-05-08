@@ -84,6 +84,7 @@ export default {
 
   &__image {
     max-width: 35vmax;
+    margin: auto;
 
     &.-vertical {
       max-width: initial;
