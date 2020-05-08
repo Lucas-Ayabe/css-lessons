@@ -44,6 +44,8 @@ export default {
 
 <style lang="scss">
 .section {
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,6 +53,10 @@ export default {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+
+  & + & {
+    padding-top: 0;
+  }
 
   &.-reverse {
     flex-direction: column-reverse;
@@ -101,10 +107,7 @@ export default {
   &__text {
     font-size: $font-1;
     line-height: 1.4;
-
-    &:last-of-type {
-      margin-bottom: $space-1;
-    }
+    margin-bottom: $space-1;
   }
 
   &__button {
