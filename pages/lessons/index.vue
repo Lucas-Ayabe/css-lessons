@@ -65,12 +65,12 @@ export default {
           id: 1,
           title: 'Introdução',
           desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
+        },
+        {
+          id: 2,
+          title: 'Seletores e cores',
+          desc: 'Nessa aula iremos ver sobre seletores e cores.'
         }
-        // {
-        //   id: 2,
-        //   title: 'Introdução',
-        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        // },
         // {
         //   id: 3,
         //   title: 'Introdução',

@@ -26,6 +26,7 @@ html,
 body {
   font-family: $family;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -40,4 +41,12 @@ a {
 main {
   position: relative;
   z-index: 1;
+}
+
+ul {
+  list-style-position: inside;
+
+  ul {
+    margin-left: 3ch;
+  }
 }
