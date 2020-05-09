@@ -68,8 +68,8 @@ export default {
         },
         {
           id: 2,
-          title: 'Seletores e cores',
-          desc: 'Nessa aula iremos ver sobre seletores e cores.'
+          title: 'Seletores',
+          desc: 'Nessa aula iremos ver sobre seletores.'
         }
         // {
         //   id: 3,

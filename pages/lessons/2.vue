@@ -3,7 +3,7 @@
     <article class="container">
       <AppSection align="start">
         <AppSectionContent>
-          <h1 class="section__title">Seletores e cores</h1>
+          <h1 class="section__title">Seletores</h1>
           <p class="section__text">
             No CSS como visto no exemplo da aula passada, para se começar a
             estilizar um elemento primeiro devemos selecionar o que queremos
