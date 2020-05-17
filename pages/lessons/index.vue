@@ -75,12 +75,12 @@ export default {
           id: 3,
           title: 'Cores',
           desc: 'Nessa aula iremos ver sobre cores no CSS.'
+        },
+        {
+          id: 4,
+          title: 'Tipografia',
+          desc: 'Nessa aula iremos ver sobre tipografia sobre CSS.'
         }
-        // {
-        //   id: 4,
-        //   title: 'Introdução',
-        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        // },
         // {
         //   id: 5,
         //   title: 'Introdução',
