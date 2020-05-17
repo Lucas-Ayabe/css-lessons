@@ -258,8 +258,9 @@
           <p class="section__text">
             cria espaçamento entre letras tipo isso aqui: l e t t e r. Ex:
           </p>
-
-          <prism language="css">.box { letter-spacing: 1px; }</prism>
+          <client-only>
+            <prism language="css">.box { letter-spacing: 1px; }</prism>
+          </client-only>
         </AppSectionContent>
       </AppSection>
 
@@ -269,16 +270,19 @@
           <p class="section__text">
             Define o tamanho da linha. Ex:
           </p>
-
-          <prism language="css">.box { line-height: 10px; }</prism>
+          <client-only>
+            <prism language="css">.box { line-height: 10px; }</prism>
+          </client-only>
           <p class="section__text">Pode ter valor fixo</p>
-          <!-- prettier-ignore -->
-          <prism language="css">
+          <client-only>
+            <!-- prettier-ignore -->
+            <prism language="css">
   .box {
     font-size: 10px;
     line-height: 1.4; /* 14px, pois 10px * 1.4 = 14px */
   }
-          </prism>
+            </prism>
+          </client-only>
           <p class="section__text">
             Tem um valor de multiplicado pelo proprio font-size
           </p>
@@ -297,7 +301,9 @@
             <li>right(a direita)</li>
             <li>justify(justificado)</li>
           </ul>
-          <prism language="css">.box { text-align: center; }</prism>
+          <client-only>
+            <prism language="css">.box { text-align: center; }</prism>
+          </client-only>
         </AppSectionContent>
       </AppSection>
 
@@ -313,13 +319,17 @@
             <li>overline(sublinhado em cima)</li>
             <li>line-through(sublinhado riscando)</li>
           </ul>
-          <prism language="css">.box { text-decoration: underline; }</prism>
+          <client-only>
+            <prism language="css">.box { text-decoration: underline; }</prism>
+          </client-only>
           <p class="section__text">
             O jeito mais comum, só um sublinado da cor do texto.
           </p>
-          <prism language="css"
-            >.box { text-decoration: underline wavy #f00; }</prism
-          >
+          <client-only>
+            <prism language="css"
+              >.box { text-decoration: underline wavy #f00; }</prism
+            >
+          </client-only>
           <div class="section__text">
             O código acima cria um sublinhado vermelho com formato de ondinha.
           </div>
@@ -332,7 +342,9 @@
           <p class="section__text">
             Define quanto de espaço tem na marcação de paragrafo. Ex:
           </p>
-          <prism language="css">.box { text-indent: 1ch; }</prism>
+          <client-only>
+            <prism language="css">.box { text-indent: 1ch; }</prism>
+          </client-only>
           <p class="section__text">Vai gerar algor como:</p>
           <p class="section__text">
             &nbsp; Iniciei o paragrafo<br />Estou em outra linha normalmente<br />Terminei
@@ -355,13 +367,15 @@
             <li>ellipsis(corta o texto com ...)</li>
             <li><i>string</i>(corta o texto com o valor que vc digitar)</li>
           </ul>
-          <!-- prettier-ignore -->
-          <prism language="css">
+          <client-only>
+            <!-- prettier-ignore -->
+            <prism language="css">
 .box {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-          </prism>
+            </prism>
+          </client-only>
         </AppSectionContent>
       </AppSection>
 
@@ -372,7 +386,11 @@
             Coloca sombra no texto com a seguinte sintaxe: text-shadow: &lt;x>
             &lt;y> &lt;blur> &lt;cor>. Ex:
           </p>
-          <prism language="css">.box { text-shadow: 2px 2px 4px #555; }</prism>
+          <client-only>
+            <prism language="css"
+              >.box { text-shadow: 2px 2px 4px #555; }</prism
+            >
+          </client-only>
         </AppSectionContent>
       </AppSection>
 
@@ -383,7 +401,9 @@
             Obriga o texto a usar algum estilo tipo tudo maiusculo, tudo
             minusculo, misturado. Ex:
           </p>
-          <prism language="css">.box { text-transfom: uppercase; }</prism>
+          <client-only>
+            <prism language="css">.box { text-transfom: uppercase; }</prism>
+          </client-only>
           <ul>
             <li>uppercase(tudo maiúsculo)</li>
             <li>lowercase(tudo minúsculo)</li>
@@ -418,46 +438,57 @@
             <dd>
               Continua ignorando mais de um espaço, mas faz com que ele se
               mantenha em uma linha só mesmo se não houver espaço. Ex:
-              <!-- prettier-ignore -->
-              <div style="white-space: nowrap; width: 60px; background: #aaa;">Olá mundo
+              <client-only>
+                <!-- prettier-ignore -->
+                <div style="white-space: nowrap; width: 60px; background: #aaa;">Olá mundo
 
-                dei vários espaços.
-              </div>
+                  dei vários espaços.
+                </div>
+              </client-only>
             </dd>
+
             <dt>white-space: pre;</dt>
             <dd>
               Segue a linha do nowrap, mas agora ele respeita o espaço digitado
               e as puladas de linha.
-              <!-- prettier-ignore -->
-              <div style="white-space: pre; width: 60px; background: #aaa;">Olá   mundo
+              <client-only>
+                <!-- prettier-ignore -->
+                <div style="white-space: pre; width: 60px; background: #aaa;">Olá   mundo
 
                   dei vários espaços.
-              </div>
+                </div>
+              </client-only>
             </dd>
 
             <dt>white-space: pre-wrap;</dt>
             <dd>
               ele respeita o espaço digitado, as puladas de linha e quebra o
               texto automáticamente caso ele não caiba no container.
-              <!-- prettier-ignore -->
-              <div style="white-space: pre-wrap; width: 100px; background: #aaa;">Olá   mundo
+              <client-only>
+                <!-- prettier-ignore -->
+                <div style="white-space: pre-wrap; width: 100px; background: #aaa;">Olá   mundo
 
                   dei vários espaços.
-              </div>
+                </div>
+              </client-only>
             </dd>
 
             <dt>white-space: pre-line;</dt>
             <dd>
               Respeita somente as quebras de linha, mas mantém a quebra de texto
               automática e continua considerando apenas 1 espaço.
-              <!-- prettier-ignore -->
-              <div style="white-space: pre-line; width: 100px; background: #aaa;">Olá   mundo
+              <client-only>
+                <!-- prettier-ignore -->
+                <div style="white-space: pre-line; width: 100px; background: #aaa;">Olá   mundo
 
                   dei vários espaços.
-              </div>
+                </div>
+              </client-only>
             </dd>
           </dl>
-          <prism language="css">.box { white-space: pre-wrap; }</prism>
+          <client-only>
+            <prism language="css">.box { white-space: pre-wrap; }</prism>
+          </client-only>
         </AppSectionContent>
       </AppSection>
 
@@ -469,7 +500,9 @@
             propriedade pode fazer com que o texto seja quebrado letra por
             letra. Ex:
           </p>
-          <prism language="css">.box { word-break: break-all; }</prism>
+          <client-only>
+            <prism language="css">.box { word-break: break-all; }</prism>
+          </client-only>
           <ul>
             <li>
               break-all(Para previnir overflow, palavra pode quebrar em qualquer
