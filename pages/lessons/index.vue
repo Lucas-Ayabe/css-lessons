@@ -79,13 +79,13 @@ export default {
         {
           id: 4,
           title: 'Tipografia',
-          desc: 'Nessa aula iremos ver sobre tipografia sobre CSS.'
+          desc: 'Nessa aula iremos ver sobre tipografia no CSS.'
+        },
+        {
+          id: 5,
+          title: 'Espaçamento',
+          desc: 'Nessa aula iremos ver sobre espaçamento no CSS.'
         }
-        // {
-        //   id: 5,
-        //   title: 'Introdução',
-        //   desc: 'Nessa aula iremos ver uma introdução sobre CSS.'
-        // }
       ]
     }
   }
