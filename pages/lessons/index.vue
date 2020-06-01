@@ -85,6 +85,12 @@ export default {
           id: 5,
           title: 'Espaçamento',
           desc: 'Nessa aula iremos ver sobre espaçamento no CSS.'
+        },
+        {
+          id: 6,
+          title: 'Especifidade e tipos de CSS',
+          desc:
+            'Nessa aula iremos ver sobre CSS inline, interno, externo e sobre especifidade no CSS.'
         }
       ]
     }
