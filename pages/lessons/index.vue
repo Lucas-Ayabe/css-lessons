@@ -59,6 +59,17 @@ export default {
     AppButton
   },
   data() {
+    // TODO lesson - dimensões(width, height, min e max)
+    // TODO lesson - positions
+    // TODO lesson - display
+    // TODO lesson - pseudo-classes e pseudo-elementos
+    // TODO lesson - opacidade, bordas arredondades, sombras, gradients
+    // TODO lesson - transforms
+    // TODO lesson - animações
+    // TODO lesson - animações
+    // TODO lesson - variaveis
+    // TODO lesson - box-model
+    // TODO lesson - responsivo
     return {
       lessons: [
         {
@@ -91,6 +102,12 @@ export default {
           title: 'Especifidade e tipos de CSS',
           desc:
             'Nessa aula iremos ver sobre CSS inline, interno, externo e sobre especifidade no CSS.'
+        },
+        {
+          id: 7,
+          title: 'Dimensões',
+          desc:
+            'Nessa aula iremos ver sobre propriedades como width, height e suas variações.'
         }
       ]
     }
